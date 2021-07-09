@@ -39,11 +39,13 @@ at the same time.
 ### Objective
 
 The goal of this first phase is to implement the above requirements. The following is a rough
-guide to help you see how we will analyze this challenge:
+guide to help you see how we will analyze this challenge. This is how we envision it being
+done, but if you come up with something that deviates from/improves on our suggestions, great!
+We would love to see how you think.
 
 - [ ] Write the Dockerfile for each of the parts of this application. Backend and frontend.
 - [ ] Each of the parts of this app should be able to run dockerized indempendently of each other - 
-even if the frontend won't display any data if the backend is not running.
+even if the frontend won't display any data when the backend is not running.
 - [ ] Both the frontend and backend need to run together using one command
 - [ ] When presenting your solution, volumes need to be deleted prior to issuing the command to
 start the environment. Depending on how your Dockerfiles are composed, volume caching will keep 
