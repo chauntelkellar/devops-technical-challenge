@@ -54,6 +54,8 @@ running from scratch to ensure it is a repeatable process.
 - [ ] The backend is a RoR application using postgres. The project uses the gem PG and this gem 
 depends on the `libpq-dev` library. Make sure to ensure your Dockerfile for the backend accounts for
 this dependency.
+- [ ] For the backend you need to seed the database before it will provide any data. The fastest
+method to setup the database and seed it is by running the command `bin/rails db:setup`
 
 
 ## Environment
