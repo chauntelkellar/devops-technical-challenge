@@ -1,5 +1,5 @@
 # build environment 
-FROM node: lts-alpine
+FROM node:alpine
 
 # Set working directory 
 WORKDIR /usr/src/app
@@ -10,6 +10,7 @@ COPY package-lock.json ./
 
 #install node packages
 RUN npm install --silent
+RUN npm install react-is --silent 
 
 # Copy app
 COPY . ./
@@ -21,7 +22,7 @@ RUN npm run build
 FROM nginx:stable-alpine
 
 # Copy build artifacts to production env to be served by nginx
-COPY -from=build /usr/src/app/build /usr/share/nginx/html
+COPY --from=0 /usr/src/app/build /usr/share/nginx/html
 
 # Expose port 80 for web traffic
 EXPOSE 80

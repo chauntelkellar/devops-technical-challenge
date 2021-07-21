@@ -1,6 +1,5 @@
 #not needed by build system
 .dockerignore
-node_modules
 npm-debug.log
 **/.git
 **/.DS_Store
@@ -9,5 +8,4 @@ Dockerfile
 .gitignore 
 
 #artifacts built during image creation
-build
 node_modules
