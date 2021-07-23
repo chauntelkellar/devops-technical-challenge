@@ -1,0 +1,7 @@
+#not needed by build system
+.dockerignore
+**/.git
+**/.DS_Store
+Dockerfile 
+.gitignore 
+logs/tmp
