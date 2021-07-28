@@ -1,0 +1,11 @@
+#not needed by build system
+.dockerignore
+npm-debug.log
+**/.git
+**/.DS_Store
+**/node_modules
+Dockerfile 
+.gitignore 
+
+#artifacts built during image creation
+node_modules

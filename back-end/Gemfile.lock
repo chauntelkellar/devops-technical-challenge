@@ -153,6 +153,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
+  dotenv-rails
   faker (~> 2.18)
   listen (~> 3.3)
   pg (~> 1.1)
